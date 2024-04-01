@@ -1,0 +1,59 @@
+.button {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: var(--spacing);
+	padding: var(--spacing);
+	cursor: pointer;
+	transition: 250ms;
+	white-space: nowrap;
+	box-shadow: 0px 0px 0px 0px transparent;
+}
+
+/* Transparent background with black text */
+.button-default {
+	background-color: transparent;
+	color: var(--text-primary);
+}
+
+.button-default > svg path {
+	fill: var(--text-primary);
+}
+
+.button-default:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Black background with white text */
+.button-primary {
+	border: 2px solid transparent;
+	background-color: var(--accent-primary);
+	color: var(--background-primary);
+}
+
+.button-primary > svg path {
+	fill: var(--background-primary);
+}
+
+.button-primary:hover {
+	border-color: var(--accent-primary);
+	color: var(--accent-primary);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* White background with black text */
+.button-secondary {
+	border: 2px solid transparent;
+	background-color: var(--background-secondary);
+	color: var(--text-primary);
+}
+
+.button-secondary > svg path {
+	fill: var(--text-primary);
+}
+
+.button-secondary:hover {
+	border-color: var(--background-secondary);
+	background-color: rgba(255, 255, 255, 0.25);
+	color: var(--background-secondary);
+}

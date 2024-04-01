@@ -1,0 +1,98 @@
+:root {
+	/* Colors */
+	--background-primary: #eff2f6;
+	--background-secondary: #ffffff;
+	--accent-primary: #0d0d0d;
+	--accent-secondary: #979797;
+	--text-primary: #171717;
+	--text-secondary: #979797;
+	--success: #539165;
+	--fail: #f10909;
+	--shadow: rgba(0, 0, 0, 0.1);
+
+	/* Typography */
+	--h1: 500 2.986rem 'PublicSans', sans-serif;
+	--h2: 500 2.488rem 'PublicSans', sans-serif;
+	--h3: 500 2.074rem 'PublicSans', sans-serif;
+	--h4: 500 1.728rem 'PublicSans', sans-serif;
+	--h5: 500 1.44rem 'PublicSans', sans-serif;
+	--h6: 500 1.2rem 'PublicSans', sans-serif;
+	--p: 400 1rem 'PublicSans', sans-serif;
+	--small: 300 0.833rem 'PublicSans', sans-serif;
+
+	/* Spacing Units */
+	--spacing: 0.5rem;
+	--double-spacing: 1rem;
+	--half-spacing: 0.25rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	background: none;
+	list-style: none;
+	text-decoration: none;
+	transition: 300ms;
+	font: var(--p);
+	color: var(--text-primary);
+	-webkit-tap-highlight-color: transparent;
+}
+
+*:not(html, head, script, next-route-announcer) {
+	display: flex;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	background-color: var(--background-primary);
+}
+
+h1 {
+	font: var(--h1);
+}
+
+h2 {
+	font: var(--h2);
+}
+
+h3 {
+	font: var(--h3);
+}
+
+h4 {
+	font: var(--h4);
+}
+
+h5 {
+	font: var(--h5);
+}
+
+h6 {
+	font: var(--h6);
+}
+
+p {
+	font: var(--p);
+}
+
+small {
+	font: var(--small);
+}
+
+input::placeholder {
+	color: var(--text-secondary);
+}
+
+main {
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex: 1;
+}

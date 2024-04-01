@@ -1,0 +1,21 @@
+.newsletter-form {
+	align-items: center;
+	border: 1px solid var(--accent-secondary);
+	box-shadow: 0px 0px 0px 0px transparent;
+}
+
+.newsletter-form:focus-within {
+	border-color: var(--accent-primary);
+	box-shadow: 0px 0px 0px 1px var(--accent-primary);
+}
+
+.newsletter-form input {
+	flex: 1;
+	font: var(--small);
+	padding: var(--spacing);
+}
+
+.newsletter-form button {
+	font: var(--small);
+	padding: var(--spacing);
+}

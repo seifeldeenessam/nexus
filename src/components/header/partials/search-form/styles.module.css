@@ -1,0 +1,31 @@
+.search-form {
+	width: 100%;
+	align-items: center;
+}
+
+.search-form:focus-within {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-form:focus-within > button:first-child svg path {
+	fill: var(--text-primary);
+}
+
+.search-form:focus-within > button:last-child {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.search-form svg path {
+	fill: var(--text-secondary);
+}
+
+.search-form input {
+	flex: 1;
+	font: var(--small);
+}
+
+.search-form button:last-child {
+	transform: scale(0);
+	opacity: 0;
+}

@@ -1,0 +1,71 @@
+.hero {
+	padding-block: calc(var(--double-spacing) * 2);
+}
+
+.hero .hero-content {
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--double-spacing);
+}
+
+.hero .hero-content h1 {
+	text-align: center;
+}
+
+.hero .hero-content p {
+	color: var(--text-secondary);
+	max-width: 60ch;
+	text-align: center;
+}
+
+.hero .hero-content a {
+	padding: var(--double-spacing) calc(var(--double-spacing) * 4);
+}
+
+.hero .hero-content .hero-gallery {
+	width: 100%;
+	flex-wrap: wrap;
+	gap: var(--double-spacing);
+	margin-top: var(--double-spacing);
+}
+
+.hero .hero-content .hero-gallery li {
+	position: relative;
+	flex: 1;
+	flex-basis: 30%;
+	aspect-ratio: 3/4;
+	overflow: hidden;
+}
+
+.hero .hero-content .hero-gallery li img {
+	z-index: 0;
+}
+
+.hero .hero-content .hero-gallery li a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	z-index: 10;
+	opacity: 0;
+}
+
+.hero .hero-content .hero-gallery li:hover > img {
+	transform: scale(1.1);
+	filter: blur(5px);
+}
+
+.hero .hero-content .hero-gallery li:hover > a {
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.hero .hero-content .hero-gallery li:nth-child(odd) {
+	margin-top: calc((var(--double-spacing) * 2));
+}
+
+.hero .hero-content .hero-gallery li:nth-child(even) {
+	margin-bottom: calc((var(--double-spacing) * 2));
+}

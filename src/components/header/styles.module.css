@@ -1,0 +1,33 @@
+.header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid var(--accent-secondary);
+	background-color: rgba(239, 242, 246, 0.25);
+	backdrop-filter: blur(10px);
+	z-index: 1000;
+}
+
+.header .header-content {
+	width: 100%;
+	align-items: center;
+	gap: var(--double-spacing);
+	padding: var(--spacing) 0;
+}
+
+.header .header-content nav {
+	flex: 1;
+	gap: var(--double-spacing);
+}
+
+.header .header-content nav ul {
+	gap: var(--spacing);
+}
+
+.header .header-content nav ul li a {
+	font: var(--small);
+}
+
+.header .header-content > div a {
+	font: var(--small);
+}

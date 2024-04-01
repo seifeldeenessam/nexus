@@ -1,0 +1,36 @@
+.announcements {
+	background-color: var(--accent-primary);
+	padding-block: var(--spacing);
+}
+
+.announcements .announcements-content {
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.announcements .announcements-content .region-options {
+	align-items: center;
+	gap: var(--spacing);
+}
+
+.announcements .announcements-content .region-options > button,
+.announcements .announcements-content > a {
+	font: var(--small);
+	color: var(--background-primary);
+	padding: 0;
+}
+
+.announcements .announcements-content .region-options button svg path {
+	fill: var(--background-primary);
+}
+
+.announcements .announcements-content .region-options hr {
+	width: 1px;
+	height: var(--double-spacing);
+	background-color: var(--accent-secondary);
+}
+
+.announcements .announcements-content small {
+	color: var(--background-primary);
+}
